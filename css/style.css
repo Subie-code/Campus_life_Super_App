@@ -1,0 +1,101 @@
+/* Shared page colors and navigation. */
+body {
+  background: #f3f7f5;
+  color: #19342c;
+}
+.site-header {
+  background: #153d32;
+  color: white;
+}
+.header-content, .site-footer, nav, .brand {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.header-content, .site-footer {
+  justify-content: space-between;
+  padding-block: 1rem;
+}
+.site-header a {
+  color: white;
+  text-decoration: none;
+}
+nav a {
+  padding-block: .25rem;
+}
+nav a:hover, nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: .3em;
+}
+.brand {
+  gap: .55rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.skip-link {
+  background: white;
+  padding: .5rem;
+  position: absolute;
+  z-index: 2;
+}
+a {
+  color: #1a604b;
+}
+:focus-visible {
+  outline: 3px solid #bb5925;
+  outline-offset: 3px;
+}
+
+/* Page introduction and feature cards. */
+.intro {
+  background: #d6f2e4;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  padding: clamp(1rem, 4vw, 2.5rem);
+}
+h1 {
+  font-weight: 750;
+}
+.intro p {
+  margin-bottom: 0;
+}
+.panel {
+  background: white;
+  border: 1px solid #ccdcd4;
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
+.panel h2 {
+  font-size: 1.35rem;
+}
+.event {
+  border-top: 1px solid #ccdcd4;
+  padding-block: 1rem;
+}
+.event h3 {
+  font-size: 1.1rem;
+}
+.countdown {
+  font-size: 2.5rem;
+  font-variant-numeric: tabular-nums;
+  margin: .75rem 0 0;
+}
+.btn-primary {
+  --bs-btn-bg: #21634e;
+  --bs-btn-border-color: #21634e;
+  --bs-btn-hover-bg: #153d32;
+  --bs-btn-hover-border-color: #153d32;
+}
+.task-name {
+  overflow-wrap: anywhere;
+}
+.site-footer {
+  border-top: 1px solid #ccdcd4;
+}
+@media (max-width: 575px) {
+  .header-content {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
